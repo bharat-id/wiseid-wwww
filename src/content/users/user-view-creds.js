@@ -23,8 +23,8 @@ export default function UserViewCredsModule() {
         const crdx = await GetUserTokens({
           data: {
             user: id, 
-            contract: '0x74868061d24673Bfa85C1cb9ac2657d6a6e99ac6',
-            chain: '80001',
+            contract: '0x2863903f37ec4a382235B65a60D2E7CC1EE783D1',
+            chain: '137',
             auth: 'ckey_83403b63b0f6487dbb3cabc7ebc'
           }, 
           user:'', 

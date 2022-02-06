@@ -5,8 +5,8 @@ import ContentFormatXW from "../content/webc/content-format-xw";
 import WebbDividerMedium from "../content/webb/webb-divider-md";
 import WebbDividerSmall from "../content/webb/webb-divider-sm";
 
-import TaskSearchModule from "../content/jobs/task-search";
-import TaskListModule from "../content/jobs/task-list";
+import TaskSearchModule from "../content/task/task-search";
+import TaskListModule from "../content/task/task-list";
 
 export default function Task () {
   
@@ -25,9 +25,10 @@ export default function Task () {
             <TaskSearchModule />
            </div>
             
+            <WebbDividerMedium />
+            <WebbDividerMedium />
             <TaskListModule />
-            
-
+          
 
           </>
         } 

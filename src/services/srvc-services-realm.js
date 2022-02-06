@@ -12,7 +12,6 @@ export const AuthServicesUser = async () => {
 
 }
 
-
 export const GetEventsList = async (item) => {
   
   const user = await AuthServicesUser()

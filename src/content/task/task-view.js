@@ -5,12 +5,13 @@ import Web3 from 'web3';
 
 import WebbDividerMedium from '../webb/webb-divider-md';
 import WebbDividerSmall from '../webb/webb-divider-sm';
+import FormNeeded from '../webb/form-needed';
 
-import { GetEventsInfo } from '../../services/srvc-services-realm';
-import { EventAddUser } from '../../services/srvc-user-realm';
-import { MintEventToken } from '../../services/srvc-tokens-nft';
+import { GetTaskInfo } from '../../services/srvc-services-realm';
+import { TaskAddUser } from '../../services/srvc-user-realm';
 
-export default function EventsViewModule() {
+
+export default function TaskViewModule() {
   
   const asset = "ww"
   const {id} = useParams();
@@ -30,7 +31,7 @@ export default function EventsViewModule() {
           webb: process.env.REACT_APP_WEBB_SITE_NMBR
         }
 
-        const result = (await GetEventsInfo(datx))
+        const result = (await GetTaskInfo(datx))
         setInfo(result.data)
         setLoading(false);
       }
@@ -39,8 +40,9 @@ export default function EventsViewModule() {
   },[asset]);
 
   const [data, setData]=useState({
-    item: 'docx',
-    nmbr: ''
+    name: '',
+    emid: '',
+    amnt: ''
   })
 
   const handleChange = async(key, val) => {
@@ -57,7 +59,7 @@ export default function EventsViewModule() {
       const chainId = await window.ethereum.request({method: 'eth_chainId',});
       console.log(chainId)
 
-      const text = `Regsiter for Event: ${info.name}. Settle DAO`
+      const text = `Apply for Job: ${info.name}. Settle DAO`
       const txtm = `0x${Buffer.from(text, 'utf8').toString('hex')}`;
       const esin = await window.ethereum.request({
         method: 'personal_sign',
@@ -66,33 +68,23 @@ export default function EventsViewModule() {
       
       console.log(esin)
 
-      const tokenid = info.nmbr.substring(0,2) + Date.now() + 6
       setLoading(true)
       if (esin) {
-        const result = await MintEventToken ({
-          cred: account,
-          name: info.name,
-          memo: info.memo,
-          link: info.link,
-          nmbr: info.enid,
-          tokenid: tokenid,
-          stts: info.stts,
-          ents: info.stts,
-          ists: (new Date()).toISOString().substring(0,10),
-          form: info.form,
-          sort: info.sort,
+        
+        const result = await TaskAddUser({
+          data: { enid: id, user: account, ...data },
+          user: '',
+          webb: ''
         })
-
+        console.log (result)
         if (result.data) {
-          const xxxx = await EventAddUser({
-            data: {enid: id, user: account}
-          })
-          alert ('Registration Success')
+          alert ('Success: Profile Submitted')
+          history.push('/w')
         } 
-        else alert ('Registration Failed')
+        else alert ('Error: Please Try Again')
 
         setLoading(false)
-        history.push('/e')
+
       }
 
     }
@@ -105,7 +97,7 @@ export default function EventsViewModule() {
     <>
       <WebbDividerMedium />
       <p className="lead text-center text-color-tone">
-        <i className="caption-md bi-calendar"></i>
+        <i className="caption-md bi-briefcase"></i>
       </p>
       <p className="lead text-center text-color-tone">Loading Experience</p>
       <p className="text-center text-color-tone">{id}</p>
@@ -130,10 +122,49 @@ export default function EventsViewModule() {
               <WebbDividerSmall />
               <WebbDividerSmall />
               
+              <hr></hr>
+
+              <div className={`form-group mb-3 ${data.form !=='' && data.sort !=='' ? '' : 'd-none'}`}>
+                <label className="form-label small">Your Name  <FormNeeded /></label>
+                <input type="text" 
+                  className="form-control height-md text-center" 
+                  style={{fontSize:'0.9rem', height:'2.7rem'}}
+                  value={data.name}
+                  onChange={({ target }) => {handleChange("name", target.value); setText('');}}
+                  placeholder="">
+                </input>
+              </div>
+
+              <div className={`form-group mb-3 ${data.form !=='' && data.sort !=='' ? '' : 'd-none'}`}>
+                <label className="form-label small">Your Email  <FormNeeded /></label>
+                <input type="text" 
+                  className="form-control height-md text-center" 
+                  style={{fontSize:'0.9rem', height:'2.7rem'}}
+                  value={data.emid}
+                  onChange={({ target }) => {handleChange("emid", target.value); setText('');}}
+                  placeholder="">
+                </input>
+              </div>
+
+              <div className={`form-group mb-3 ${data.form !=='' && data.sort !=='' ? '' : 'd-none'}`}>
+                <label className="form-label small">Job Amount  <FormNeeded /></label>
+                <input type="text" 
+                  className="form-control height-md text-center" 
+                  style={{fontSize:'0.9rem', height:'2.7rem'}}
+                  value={data.amnt}
+                  onChange={({ target }) => {handleChange("amnt", target.value); setText('');}}
+                  placeholder="">
+                </input>
+              </div>
+
+
+              <WebbDividerSmall />
+              <WebbDividerSmall />
+              
               <button className='btn btn-primary back-color-main px-3 rounded-pill'
                 onClick={() => handleSubmit()}
               
-              >Register</button>
+              >Apply to Job</button>
 
               <WebbDividerMedium />
               <p className="text-center text-color-tone small text-truncate">{id}</p>

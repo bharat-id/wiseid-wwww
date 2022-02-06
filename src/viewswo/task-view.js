@@ -5,7 +5,7 @@ import ContentFormatXW from "../content/webc/content-format-xw";
 import WebbDividerMedium from "../content/webb/webb-divider-md";
 import WebbDividerSmall from "../content/webb/webb-divider-sm";
 
-import TaskViewModule from "../content/jobs/task-view";
+import TaskViewModule from "../content/task/task-view";
 
 export default function TaskView () {
   

@@ -20,14 +20,14 @@ export default function Events () {
         data= {
           <>
            <div className="back-color-dark text-center">
-            <WebbDividerMedium/>
-            <WebbDividerMedium/>
-            <EventsSearchModule />
-           </div>
-            
-            <EventsListModule/>
-            
+              <WebbDividerMedium/>
+              <WebbDividerMedium/>
+              <EventsSearchModule />
+            </div>
 
+            <WebbDividerMedium />
+            <WebbDividerMedium />
+            <EventsListModule/>
 
           </>
         } 

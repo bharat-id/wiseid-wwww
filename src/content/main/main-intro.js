@@ -24,7 +24,7 @@ export default function MainIntroModule() {
             <div className="col-1" ></div>
             <div className="col" >
             <p className="caption-md">
-              <strong>WiseID</strong> is the NFT approach to digital identity 
+              <strong>WiseID</strong> is the Award-wnning NFT approach to decentralized digital identity 
               that gives individuals control of their digital identities.
             </p>
             </div>
