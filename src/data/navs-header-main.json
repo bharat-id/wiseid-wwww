@@ -1,0 +1,36 @@
+{
+  "data" : [      
+    { 
+      "name":"Home",
+      "text":"", "icon":"bi-house-door",
+      "link":"home",
+      "user":["indx", "bznx"],
+      "subs":["lite"],
+      "actv":true
+    },
+    { 
+      "name":"Tokens",
+      "text":"", "icon":"bi-briefcase",
+      "link":"tokens",
+      "user":["indx", "bznx"],
+      "subs":["lite"],
+      "actv":true
+    },
+    { 
+      "name":"Transfers",
+      "text":"", "icon":"bi-check-circle",
+      "link":"transfers",
+      "user":["indx", "bznx"],
+      "subs":["lite"],
+      "actv":true
+    },
+    { 
+      "name":"CredStore",
+      "text":"", "icon":"bi-check-circle",
+      "link":"creds",
+      "user":["bznx"],
+      "subs":["lite"],
+      "actv":true
+    }
+  ]
+}

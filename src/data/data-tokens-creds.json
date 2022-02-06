@@ -1,0 +1,15 @@
+{
+  "data" : [
+    { 
+      "name":"Academic",
+      "text":"Degrees, Certifications, Online Coures, Awards and all academic credentials", 
+      "link":"tokens/create/academic",
+      "icon":"",
+      "avtr":"https://image.freepik.com/free-photo/happy-young-female-student-holding-notebooks-from-courses-smiling-camera-standing-spring-clothes-against-blue-background_1258-70161.jpg?size=240&ext=jpg",
+      "code":"academic", 
+      "sort": ["certificate", "degree", "course", "awards"],
+      "user":["bznx"],
+      "actv":true
+    }
+  ]
+}

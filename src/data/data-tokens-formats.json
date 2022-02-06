@@ -1,0 +1,125 @@
+{
+  "data" : [
+    { 
+      "name":"Academic",
+      "text":"Degrees, Certifications, Online Coures, Awards and all academic credentials", 
+      "link":"tokens/create/academic",
+      "icon":"",
+      "avtr":"https://image.freepik.com/free-photo/happy-young-female-student-holding-notebooks-from-courses-smiling-camera-standing-spring-clothes-against-blue-background_1258-70161.jpg?size=240&ext=jpg",
+      "code":"academic", 
+      "sort": ["certificate", "degree", "course", "awards"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Work",
+      "text":"Employees, Contractors, Freelancers, Interns, Awards and all work related", 
+      "link":"tokens/create/work",
+      "icon":"",
+      "avtr":"https://image.freepik.com/free-photo/confident-business-team-with-leader_1098-3228.jpg?size=240&ext=jpg",
+      "code":"work", 
+      "sort": ["offer", "employee", "contractor", "intern", "awards"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Social",
+      "text":"Memberships of Social and Alumni Groups, Rotary Clubs, Interest Groups etc...",
+      "link":"tokens/create/social",
+      "icon":"",
+      "avtr":"https://img.freepik.com/free-photo/young-casual-business-people-office_1098-7436.jpg?size=240&ext=jpg",
+      "code":"social", 
+      "sort": ["attendance", "membership", "awards"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Tickets",
+      "text":"Tickets and Attendance for Online / Offline Events, Seminars, Travel etc", 
+      "link":"tokens/create/tickets",
+      "icon":"",
+      "avtr":"https://img.freepik.com/free-photo/cinema-tickets-bucket-with-popcorn_23-2147807333.jpg?size=240&ext=jpg",
+      "code":"tickets", 
+      "sort": ["concert", "devcon", "webinar", "event", "travel"],
+      "user":["indx", "bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Digital Assets",
+      "text":"Awards, Personal Gifts, Celebrate Moments with Family, Friends & Colleagues ", 
+      "link":"tokens/create/memo",
+      "icon":"",
+      "avtr":"https://image.freepik.com/free-photo/hand-painted-floral-background_1048-1927.jpg?size=240&ext=jpg",
+      "code":"memo", 
+      "sort": ["art", "music", "article"],
+      "user":["indx"],
+      "actv":true
+    },
+    { 
+      "name":"Physical Assets",
+      "text":"Real Estate, Land and other Physical Ownable Assets in whole or fraction",
+      "link":"tokens/create/assets",
+      "icon":"",
+      "avtr":"https://img.freepik.com/free-photo/office-skyscrapers-business-district_107420-95733.jpg?size=240&ext=jpg",
+      "code":"assets", 
+      "sort": ["house", "land", "apartment", "estate", "inheritance"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Financial",
+      "text":"Finanical Assets, Shares & Certificates, Loans, Insurance, Warranty etc...",
+      "link":"tokens/create/financial",
+      "icon":"",
+      "avtr":"https://image.freepik.com/free-vector/graph-world-map-stock-market-forex-trading-concept-background_56104-1006.jpg?size=240&ext=jpg",
+      "code":"financial", 
+      "sort": ["shares", "bonus", "bankid", "insurance", "inheritance"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Healthcare",
+      "text":"Health Cards and Identity, Medical Insurance, Fitness Certificates... ",
+      "link":"tokens/create/healthcare",
+      "icon":"",
+      "avtr":"https://img.freepik.com/free-photo/top-view-doctor-patient-hands-holding-red-heart-white-table_38391-541.jpg?size=240&ext=jpg",
+      "code":"healthcare", 
+      "sort": ["healthid", "certficate", "insurance"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Celebrations",
+      "text":"Awards, Personal Gifts, Celebrate Moments with Family, Friends & Colleagues ", 
+      "link":"tokens/create/memo",
+      "icon":"",
+      "avtr":"https://img.freepik.com/free-vector/merry-new-year-merry-christmas-2022-white-gift-boxes-with-golden-bows-gold-sequins-confetti-white-background-gift-boxes-flying-falling-vector-illustration-eps10_87521-3446.jpg?size=240&ext=jpg",
+      "code":"memo", 
+      "sort": ["gift", "moments"],
+      "user":["indx"],
+      "actv":true
+    },
+    { 
+      "name":"Administrative",
+      "text":"Identity, Licences and Permits etc issued by National / Local Gov",
+      "link":"tokens/create/administrative",
+      "icon":"",
+      "avtr":"https://img.freepik.com/free-photo/capitol-facade-with-columns-blue-sky-background-bottom-view_81262-114.jpg?size=240&ext=jpg",
+      "code":"administrative", 
+      "sort": ["identity", "license", "patent", "trademark"],
+      "user":["bznx"],
+      "actv":true
+    },
+    { 
+      "name":"Value",
+      "text":"Anything and Everything else of value and dear to you",
+      "link":"tokens/create/others",
+      "icon":"",
+      "avtr":"https://image.freepik.com/free-photo/vintage-collage-frame-wallpaper-background-paper-texture-with-design-space_53876-145555.jpg?size=240&ext=jpg",
+      "code":"value", 
+      "sort": ["value"],
+      "user":[],
+      "actv":true
+    }
+  ]
+}
