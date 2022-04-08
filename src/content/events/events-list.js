@@ -32,12 +32,15 @@ export default function EventsListModule() {
       }
       fetchData()
     } else {}
-  },[asset]);
+  },[]);
   
 
   if (loading) return ( 
     <>
       <WebbDividerMedium />
+      <p className="lead text-center text-color-tone" style={{fontSize:'1.5rem'}}>
+        <i className="caption-md bi-calendar-check"></i>
+      </p>
       <p className="lead text-center text-color-tone">Loading Your Experience</p>
     </>
   );

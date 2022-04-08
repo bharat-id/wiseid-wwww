@@ -14,20 +14,12 @@
       "link":"w",
       "user":["ww"],
       "subs":["ww"],
-      "actv": true
+      "actv": false
     },
     { 
       "name":"Events",
       "text":"", "icon":"bi-check-circle",
       "link":"e",
-      "user":["ww"],
-      "subs":["ww"],
-      "actv":true
-    },
-    { 
-      "name":"CredStore",
-      "text":"", "icon":"bi-image",
-      "link":"creds",
       "user":["ww"],
       "subs":["ww"],
       "actv":false

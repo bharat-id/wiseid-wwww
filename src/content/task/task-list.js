@@ -37,6 +37,9 @@ export default function TaskListModule() {
   if (loading) return ( 
     <>
       <WebbDividerMedium />
+      <p className="lead text-center text-color-tone" style={{fontSize:'1.5rem'}}>
+        <i className="caption-md bi-briefcase"></i>
+      </p>
       <p className="lead text-center text-color-tone">Loading Your Experience</p>
     </>
   );
